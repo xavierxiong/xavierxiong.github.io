@@ -455,3 +455,56 @@ html, body {
         word-break: break-word; 
     }
 }
+@media screen and (max-width: 768px) {
+
+    .container, .container2, table {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        box-sizing: border-box !important;
+    }
+
+
+    table tbody, table tr, table td {
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+    }
+
+
+    td {
+        text-align: center !important; 
+        padding-bottom: 20px !important;
+    }
+
+    td[style*="padding-left"] {
+        padding-left: 0 !important;
+    }
+
+    img {
+        max-width: 90% !important; 
+        height: auto !important;
+        margin: 10px auto !important;
+        display: block !important;
+        float: none !important;
+    }
+
+    .bg4 td, .flower-section td {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 15px !important;
+    }
+
+    .brown54 {
+        font-size: 26px !important;
+        padding: 20px 0 10px 0 !important;
+    }
+    
+    p, td {
+        font-size: 18px !important;
+        line-height: 1.6 !important;
+    }
+}
