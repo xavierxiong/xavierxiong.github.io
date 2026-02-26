@@ -361,150 +361,60 @@ footer>hr{
 }
 
 @media screen and (max-width: 768px) {
-    .hero-banner {
-        height: auto !important; 
-        min-height: 100vh; 
-        padding: 40px 0 !important;
-        flex-direction: column !important; 
-        background-attachment: scroll !important; 
-    }
-
-    .content-wrapper {
-        flex-direction: column !important; 
-        width: 100% !important;
-        gap: 30px; 
-    }
-
-    .text-side {
-        transform: none !important; 
-        text-align: center !important; 
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    .brand-th {
-        font-size: 28px !important; 
-        line-height: 1.2;
-    }
-
-    .brand-en {
-        font-size: 18px !important;
-        margin-bottom: 20px;
-    }
-
-    .feature-box {
-        border-left: none !important;
-        border-top: 3px solid #FFB703; 
-        padding-left: 0 !important;
-        padding-top: 15px;
-        font-size: 16px !important;
-    }
-
-    .qr-side {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .qr-container {
-        width: 180px;
-        padding: 10px;
+    .bg2, .bg3, .bg4, .hero-banner, .flower-section, .bggray {
+        height: auto !important;
+        min-height: 0 !important;
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+        background-attachment: scroll !important;
+        display: block !important;
+        overflow: visible !important;
     }
 
     .container, .container2 {
         width: 100% !important;
-        padding: 0 15px;
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
     }
 
     table, tbody, tr, td {
         display: block !important;
         width: 100% !important;
-    }
-}
-
-html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
-    -webkit-overflow-scrolling: touch;
-}
-
-@media screen and (max-width: 768px) {
-    .container, .container2, .navcontain, table, section {
-        width: 100% !important;
-        max-width: 100vw !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        box-sizing: border-box !important;
-    }
-
-    img {
-        max-width: 100% !important;
         height: auto !important;
-    }
-
-    .hero-banner {
-        width: 100% !important;
-        overflow: hidden;
-    }
-
-    td {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-        word-break: break-word; 
-    }
-}
-@media screen and (max-width: 768px) {
-
-    .container, .container2, table {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        box-sizing: border-box !important;
-    }
-
-
-    table tbody, table tr, table td {
-        display: block !important;
-        width: 100% !important;
         padding: 0 !important;
         margin: 0 !important;
-        border: none !important;
+        text-align: center !important;
     }
-
 
     td {
-        text-align: center !important; 
-        padding-bottom: 20px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        line-height: 1.6 !important;
     }
 
-    td[style*="padding-left"] {
+    td[style*="padding-left"], td[style*="padding-top"] {
         padding-left: 0 !important;
+        padding-top: 15px !important;
     }
 
     img {
-        max-width: 90% !important; 
+        max-width: 95% !important; 
         height: auto !important;
-        margin: 10px auto !important;
+        margin: 15px auto !important;
         display: block !important;
         float: none !important;
     }
 
-    .bg4 td, .flower-section td {
-        display: block !important;
-        width: 100% !important;
-        margin-bottom: 15px !important;
+    .content-wrapper {
+        flex-direction: column !important;
+        align-items: center !important;
     }
-
-    .brown54 {
-        font-size: 26px !important;
-        padding: 20px 0 10px 0 !important;
+    .text-side {
+        transform: none !important;
+        margin-bottom: 30px !important;
     }
-    
-    p, td {
-        font-size: 18px !important;
-        line-height: 1.6 !important;
-    }
+    .brand-th { font-size: 24px !important; }
 }
