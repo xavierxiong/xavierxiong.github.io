@@ -1,0 +1,398 @@
+@charset "utf-8";
+.nav{
+	background-color: #f333;
+	height: 100px;
+	margin: 0px;
+	position: fixed;
+  top: 0;
+  width: 100%;
+	overflow: hidden;
+}
+.navcontain{
+ width:960px;
+ margin: auto;	
+	
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 78px;
+  top: 0;
+}
+.nav li {
+  float: left;
+	 font-size: 24px;
+	font-family: Prompt;
+}
+.nolink {
+ margin-top: 12px;
+ color: #244EDB;
+	font-weight: 600;
+	padding-top: 20px;
+}
+
+.nav li a {
+ display: block;
+ color: #fff;
+ text-align: center;
+ padding: 30px 16px;
+ text-decoration: none;
+}
+.nav li a:hover {
+ background: #509EDE;
+ color: #fff;
+ height: 100px;
+}
+
+.nav .active {
+ color: #000000;
+}
+
+.bgheader{
+	width: 100%;
+	background-image: url(../images/bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 548px;
+	text-align: center;
+	margin-top: 0px;
+}
+.hero-banner {
+    width: 100%;
+    height: 548px;
+    background-image: url('../images/bg1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Kanit', 'Prompt', sans-serif;
+}
+
+.content-wrapper {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.text-side {
+    flex: 1;
+    text-align: left;
+    transform: translateY(-20px);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.brand-th {
+    color: #FFFFFF;
+    font-size: 42px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.brand-en {
+    color: #FFB703; 
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.feature-box {
+    color: #F0F0F0;
+    font-size: 20px;
+    line-height: 1.4;
+    border-left: 4px solid #FFB703; 
+    padding-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.feature-box p {
+    margin: 0 0 8px 0; 
+}
+
+.price-highlight {
+    color: #FFFFFF;
+    background: rgba(211, 47, 47, 0.8); 
+    display: inline-block;
+    padding: 4px 15px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+
+.qr-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.qr-container img {
+    width: 150px; 
+    height: 150px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.qr-container span {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bg2{
+	width: 100%;
+	background-image: url(../images/bg2.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 462px;
+	text-align: center;
+	padding-top:100px;
+	margin-top: 0px;
+}
+.bg3{
+	width: 100%;
+	background-image: url(../images/bg3.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: auto !important;
+        min-height: 1200px;
+	padding-top:50px;
+	margin-top: 0px;
+        padding-bottom: 20px;
+	text-align: center;
+}
+.flower-section {
+    width: 100%;
+    background-color: #F9F7F5; 
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+    clear: both; 
+}
+.bg4{
+	width: 100%;
+	background-image: url(../images/bg4.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-height: 580px;
+	padding-top:40px;
+	margin-top: 0px;
+	text-align: center;
+        clear: both;
+
+}
+.bgwhite{
+	background-color: white;
+	background-size: cover;
+	margin: 0px;
+}
+.bggray{
+	background-color: #DBDBEA;
+	background-size: cover;
+	margin: 0px;
+}
+.headcontainer{
+	width: 960px;
+	margin: auto;
+}
+.container{
+	width: 960px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.container2{
+	width: 960px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+p{
+	margin: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	
+}
+
+.imgright {
+  float: right;
+  padding-right : 40px;
+}
+.line {
+	table-layout:fixed;
+empty-cells:show; 
+border-collapse:collapse; 
+border:1px solid #DDDDDD;
+}
+.line td{
+border:1px solid #DDDDDD;
+}
+.shado{
+	text-shadow:#000 0.1em 0.1em 0.2em
+}
+
+h1 {
+	font-size: 12px;
+	color: #CCC;
+	font-weight:normal;
+}
+h2 {
+	font-size: 12px;
+	color: #CCC;
+	font-weight:normal;
+}
+ul,ol {
+	margin-top:1px;
+	margin-left:50px;
+	padding:0px;
+}
+li{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	margin-top:0px;
+}
+
+a:link {
+	color: #666;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #666;
+}
+a:hover {
+	text-decoration: underline;
+	color: #666;
+}
+a:active {
+	text-decoration: none;
+	color: #666;
+}
+.footer a:link {
+	color: #333;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.footer a:visited {
+	text-decoration: none;
+	color: #333;
+	font-size: 12px;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+	color: #333;
+	font-size: 12px;
+}
+
+.footer a:active {
+	text-decoration: none;
+	color: #333;
+	font-size: 12px;
+}
+.footer {
+	font-size:12px;
+	color:#333;
+	font-family:tahoma, "ms Sans Serif", "microsoft sans Serif";
+		margin: 0px;
+	padding: 0px;
+}
+footer>.container{
+	padding-top: 0px ;
+}
+.red {
+	color:#F00;
+}
+.blue {
+	color:#007FFF;
+}
+.black {
+	color:#000000;
+}
+hr {
+	color:#ECECFB;
+	size:1px;
+}
+footer>hr{
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+    border: 0;
+}
+.leftpad{
+  margin-bottom: 20px;
+    text-indent: 1.5em;
+  margin-top: 20px; }
+  
+.boxcenter{
+	float: none;
+	margin: auto;
+	max-width: 450px;
+   }
+.pixmargin {
+	margin:5px;
+	padding:0px;
+}
+.brown54{
+	font-size: 44px; color: #D86C00;
+}
+
+@media screen and (max-width: 768px) {
+    .container, .container2, .navcontain {
+        width: 100% !important;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    table, tbody, tr, td {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .bg2, .bg3, .bg4, .hero-banner {
+        height: auto !important;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .brown54 {
+        font-size: 28px !important;
+    }
+    
+    .flower-section table td {
+        display: inline-block !important; 
+        width: auto !important;
+    }
+}
