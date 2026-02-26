@@ -361,60 +361,46 @@ footer>hr{
 }
 
 @media screen and (max-width: 768px) {
-    .bg2, .bg3, .bg4, .hero-banner, .flower-section, .bggray {
-        height: auto !important;
-        min-height: 0 !important;
-        padding-top: 40px !important;
-        padding-bottom: 40px !important;
-        background-attachment: scroll !important;
-        display: block !important;
-        overflow: visible !important;
-    }
-
-    .container, .container2 {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        margin: 0 !important;
-        box-sizing: border-box !important;
-    }
-
+    
     table, tbody, tr, td {
         display: block !important;
         width: 100% !important;
-        height: auto !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        text-align: center !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        box-sizing: border-box !important;
+        text-align: center !important; 
     }
 
     td {
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
-        line-height: 1.6 !important;
-    }
-
-    td[style*="padding-left"], td[style*="padding-top"] {
-        padding-left: 0 !important;
-        padding-top: 15px !important;
+        float: none !important;
+        clear: both !important;
     }
 
     img {
-        max-width: 95% !important; 
+        max-width: 90% !important; 
         height: auto !important;
-        margin: 15px auto !important;
+        margin: 10px auto 20px auto !important; 
         display: block !important;
-        float: none !important;
     }
 
+    p, .brown18, td[style*="padding-left"] {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        text-align: left !important;
+        line-height: 1.6 !important;
+    }
+
+    .hero-banner {
+        height: auto !important;
+        min-height: 100vh;
+        padding: 40px 0 !important;
+    }
     .content-wrapper {
         flex-direction: column !important;
-        align-items: center !important;
     }
     .text-side {
         transform: none !important;
-        margin-bottom: 30px !important;
+        width: 100% !important;
+        margin-bottom: 20px;
     }
-    .brand-th { font-size: 24px !important; }
 }
