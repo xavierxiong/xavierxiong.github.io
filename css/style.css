@@ -1,432 +1,563 @@
-@charset "utf-8";
-.nav{
-	background-color: #f333;
-	height: 100px;
-	margin: 0px;
-	position: fixed;
-  top: 0;
-  width: 100%;
-	overflow: hidden;
-}
-.navcontain{
- width:960px;
- margin: auto;	
-	
-}
-.nav ul {
-  list-style-type: none;
+@import url("webfonts/supermarket/stylesheet.css");
+
+* {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  height: 78px;
-  top: 0;
-}
-.nav li {
-  float: left;
-	 font-size: 24px;
-	font-family: Prompt;
-}
-.nolink {
- margin-top: 12px;
- color: #244EDB;
-	font-weight: 600;
-	padding-top: 20px;
+  box-sizing: border-box;
 }
 
-.nav li a {
- display: block;
- color: #fff;
- text-align: center;
- padding: 30px 16px;
- text-decoration: none;
-}
-.nav li a:hover {
- background: #509EDE;
- color: #fff;
- height: 100px;
+body {
+  font-family: Sarabun, sans-serif;
+  font-size: 24px;
+  color: #000;
 }
 
-.nav .active {
- color: #000000;
+h2 {
+  font-size: 32px;
+  color: #D86C00;
+  text-align: center;
+  font-weight: 700;
+  font-family: Kanit, sans-serif;
+  margin-bottom: 20px;
 }
 
-.bgheader{
-	width: 100%;
-	background-image: url(../images/bg1.jpg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	height: 548px;
-	text-align: center;
-	margin-top: 0px;
-}
+/* ===== Hero Banner Section ===== */
 .hero-banner {
-    width: 100%;
-    height: 548px;
-    background-image: url('../images/bg1.jpg'); 
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-family: 'Kanit', 'Prompt', sans-serif;
+  padding: 60px 20px;
+  background-image: url('../images/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .content-wrapper {
-    width: 90%;
-    max-width: 1600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .text-side {
-    flex: 1;
-    text-align: left;
-    transform: translateY(-20px);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  border-radius: 8px;
 }
 
 .brand-th {
-    color: #FFFFFF;
-    font-size: 42px;
-    margin-bottom: 5px;
-    font-weight: 600;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+  font-family: Kanit, sans-serif;
+  line-height: 1.3;
 }
 
 .brand-en {
-    color: #FFB703; 
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-weight: 500;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 30px;
+  font-family: Sarabun, sans-serif;
+  font-style: normal;
 }
 
 .feature-box {
-    color: #F0F0F0;
-    font-size: 20px;
-    line-height: 1.4;
-    border-left: 4px solid #FFB703; 
-    padding-left: 20px;
-    margin-bottom: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  padding: 20px;
+  border-left: 4px solid #D86C00;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
 }
 
 .feature-box p {
-    margin: 0 0 8px 0; 
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
 }
 
 .price-highlight {
-    color: #FFFFFF;
-    background: rgba(211, 47, 47, 0.8); 
-    display: inline-block;
-    padding: 4px 15px;
-    font-size: 19px;
-    font-weight: bold;
-    border-radius: 4px;
+  font-size: 22px;
+  color: #ffd700;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.6;
+  background: #d32f2f;
+  padding: 15px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-
 .qr-side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .qr-container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    text-align: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 
 .qr-container img {
-    width: 150px; 
-    height: 150px;
-    display: block;
-    margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .qr-container span {
-    color: #333;
-    font-size: 16px;
-    font-weight: bold;
-}
-.bg2{
-	width: 100%;
-	background-image: url(../images/bg2.jpg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	height: 462px;
-	text-align: center;
-	padding-top:100px;
-	margin-top: 0px;
-}
-.bg3{
-	width: 100%;
-	background-image: url(../images/bg3.jpg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	height: auto !important;
-        min-height: 1200px;
-	padding-top:50px;
-	margin-top: 0px;
-        padding-bottom: 20px;
-	text-align: center;
-}
-.flower-section {
-    width: 100%;
-    background-color: #F9F7F5; 
-    padding-top: 50px;
-    padding-bottom: 70px;
-    text-align: center;
-    clear: both; 
-}
-.bg4{
-	width: 100%;
-	background-image: url(../images/bg4.jpg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	min-height: 580px;
-	padding-top:40px;
-	margin-top: 0px;
-	text-align: center;
-        clear: both;
-
-}
-.bgwhite{
-	background-color: white;
-	background-size: cover;
-	margin: 0px;
-}
-.bggray{
-	background-color: #DBDBEA;
-	background-size: cover;
-	margin: 0px;
-}
-.headcontainer{
-	width: 960px;
-	margin: auto;
-}
-.container{
-	width: 960px;
-	margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-.container2{
-	width: 960px;
-	margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-p{
-	margin: 0px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 20px;
-	
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
 }
 
-.imgright {
-  float: right;
-  padding-right : 40px;
-}
-.line {
-	table-layout:fixed;
-empty-cells:show; 
-border-collapse:collapse; 
-border:1px solid #DDDDDD;
-}
-.line td{
-border:1px solid #DDDDDD;
-}
-.shado{
-	text-shadow:#000 0.1em 0.1em 0.2em
+/* ===== BG2 Section (Rock Dust) ===== */
+.bg2 {
+  background-image: url('../images/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
 }
 
-h1 {
-	font-size: 12px;
-	color: #CCC;
-	font-weight:normal;
-}
-h2 {
-	font-size: 12px;
-	color: #CCC;
-	font-weight:normal;
-}
-ul,ol {
-	margin-top:1px;
-	margin-left:50px;
-	padding:0px;
-}
-li{
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 5px;
-	padding-left: 0px;
-	margin-top:0px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-a:link {
-	color: #666;
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-	color: #666;
-}
-a:hover {
-	text-decoration: underline;
-	color: #666;
-}
-a:active {
-	text-decoration: none;
-	color: #666;
-}
-.footer a:link {
-	color: #333;
-	text-decoration: none;
-	font-size: 12px;
+.rock-dust-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
 }
 
-.footer a:visited {
-	text-decoration: none;
-	color: #333;
-	font-size: 12px;
+.rock-dust-text {
+  flex: 1;
+  min-width: 300px;
 }
 
-.footer a:hover {
-	text-decoration: underline;
-	color: #333;
-	font-size: 12px;
-}
-
-.footer a:active {
-	text-decoration: none;
-	color: #333;
-	font-size: 12px;
-}
-.footer {
-	font-size:12px;
-	color:#333;
-	font-family:tahoma, "ms Sans Serif", "microsoft sans Serif";
-		margin: 0px;
-	padding: 0px;
-}
-footer>.container{
-	padding-top: 0px ;
-}
-.red {
-	color:#F00;
-}
-.blue {
-	color:#007FFF;
-}
-.black {
-	color:#000000;
-}
-hr {
-	color:#ECECFB;
-	size:1px;
-}
-footer>hr{
-	height: 6px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
-    border: 0;
-}
-.leftpad{
+/* .rock-dust-text h2 {
+  font-size: 44px;
+  color: #D86C00;
   margin-bottom: 20px;
-    text-indent: 1.5em;
-  margin-top: 20px; }
-  
-.boxcenter{
-	float: none;
-	margin: auto;
-	max-width: 450px;
-   }
-.pixmargin {
-	margin:5px;
-	padding:0px;
-}
-.brown54{
-	font-size: 44px; color: #D86C00;
+  font-weight: 700;
+} */
+
+.rock-dust-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
 }
 
-@media screen and (max-width: 768px) {
-    html, body {
-        overflow-x: hidden !important;
-        width: 100% !important;
-    }
+.rock-dust-image {
+  flex: 0 0 auto;
+  text-align: right;
+}
 
-    .hero-banner {
-        height: auto !important;
-        min-height: 500px;
-        padding: 50px 0 !important;
-    }
-    .content-wrapper {
-        flex-direction: column !important;
-        height: auto !important;
-    }
-    .text-side {
-        transform: none !important;
-        width: 100% !important;
-        text-align: center !important;
-        margin-bottom: 30px;
-    }
+.rock-dust-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 
-    .container, .container2, table {
-        width: 100% !important;
-        max-width: 100% !important;
-        display: block !important; 
-    }
+/* ===== BG3 Section (Sand & Stone) ===== */
+.bg3 {
+  background-image: url('../images/bg3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
 
-    table tbody, table tr {
-        display: flex !important;
-        flex-direction: column !important; 
-        width: 100% !important;
-    }
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
 
-    td {
-        display: block !important;
-        width: 100% !important;
-        padding: 10px 20px !important;
-        box-sizing: border-box !important;
-        text-align: center !important;
-    }
+/* .brown54 {
+  font-size: 28px;
+  color: #8B4513;
+  font-weight: 700;
+  text-align: center;
+  font-family: Kanit, sans-serif;
+} */
 
-    td:has(img) {
-        order: 1 !important; 
-    }
+.sand-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
 
-    td:not(:has(img)) {
-        order: 2 !important;
-    }
+.sand-image {
+  flex: 0 0 339px;
+  text-align: center;
+}
 
-    img {
-        max-width: 90% !important;
-        height: auto !important;
-        display: block !important;
-        margin: 0 auto 15px auto !important;
-        float: none !important;
-    }
+.sand-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-    td[style*="padding-left"], td[style*="padding-top"] {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        padding-top: 10px !important;
-    }
-    
-    .brown54 {
-        font-size: 26px !important;
-        text-align: center !important;
-        width: 100% !important;
-    }
+.sand-text {
+  flex: 1;
+  min-width: 300px;
+  padding-top: 30px;
+}
+
+.sand-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.stone-specs {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stone-specs-text {
+  flex: 1;
+  min-width: 300px;
+  line-height: 2.2;
+  font-size: 18px;
+}
+
+.stone-specs-image {
+  flex: 0 0 339px;
+  text-align: center;
+}
+
+.stone-specs-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.usage-description {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* ===== Flower Section (Bricks) ===== */
+.flower-section {
+  background-image: url('../images/bg-flower.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
+
+.flower-title {
+  font-size: 28px;
+  color: #8B4513;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.flower-description {
+  text-align: center;
+  padding: 30px;
+  line-height: 1.8;
+  font-size: 18px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.flower-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.flower-gallery img {
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.flower-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== BG4 Section (Quality) ===== */
+.bg4 {
+  background-image: url('../images/bg4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
+
+.quality-title {
+  font-size: 28px;
+  color: #8B4513;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.quality-content {
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.quality-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.quality-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.quality-images a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.quality-images img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.quality-images img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer Section ===== */
+.bggray {
+  background-image: url('../images/bg-footer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e8e8e8;
+  padding: 60px 20px;
+}
+
+.bggray .container {
+  padding: 40px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.footer-info {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.footer-info strong {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-qr {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.footer-qr img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.footer-map {
+  margin: 30px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 8px;
+}
+
+.footer-hashtags {
+  font-size: 16px;
+  color: #333;
+  margin: 20px 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer {
+  font-size: 14px;
+  color: #666;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .rock-dust-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .rock-dust-image {
+    text-align: center;
+  }
+
+  .sand-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .sand-image {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .stone-specs {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .stone-specs-image {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .brand-th {
+    font-size: 36px;
+  }
+
+  .brand-en {
+    font-size: 24px;
+  }
+
+  .rock-dust-text h2 {
+    font-size: 32px;
+  }
+
+  .flower-gallery {
+    gap: 10px;
+  }
+
+  .flower-gallery img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-banner {
+    background-attachment: scroll;
+  }
+
+  .bg2 {
+    background-attachment: scroll;
+  }
+
+  .bg3 {
+    background-attachment: scroll;
+  }
+
+  .flower-section {
+    background-attachment: scroll;
+  }
+
+  .bg4 {
+    background-attachment: scroll;
+  }
+
+  .bggray {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 18px;
+  }
+
+  .brand-th {
+    font-size: 28px;
+  }
+
+  .brand-en {
+    font-size: 20px;
+  }
+
+  .rock-dust-text h2 {
+    font-size: 24px;
+  }
+
+  .brown54 {
+    font-size: 22px;
+  }
+
+  .content-wrapper {
+    padding: 30px 10px;
+  }
+
+  .rock-dust-wrapper {
+    padding: 20px;
+  }
+
+  .container2 {
+    padding: 20px;
+  }
+
+  .quality-content {
+    padding: 20px;
+  }
+
+  .bggray .container {
+    padding: 20px;
+  }
 }
