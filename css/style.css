@@ -402,7 +402,8 @@ h2 {
 }
 
 .footer-qr img {
-  max-width: 150px;
+  max-width: 50px;
+  margin: 0 30px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
